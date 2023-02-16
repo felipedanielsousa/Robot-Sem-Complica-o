@@ -1,139 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230215 21:19:04.595" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230216 16:14:19.412" rpa="false" schemaversion="3">
 <suite id="s1" name="Chronos" source="d:\Felipe\Robot_Sem_Complicacao\chronos.robot">
-<test id="s1-t1" name="ChronosTest" line="33">
+<test id="s1-t1" name="Limpar Carrinho" line="42">
 <kw name="addToCart">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${navegador}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230215 21:19:04.886" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
-<status status="PASS" starttime="20230215 21:19:04.886" endtime="20230215 21:19:08.919"/>
+<msg timestamp="20230216 16:14:19.647" level="INFO">Opening browser 'chrome' to base url 'https://www.demoblaze.com'.</msg>
+<status status="PASS" starttime="20230216 16:14:19.646" endtime="20230216 16:14:22.777"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230215 21:19:08.920" endtime="20230215 21:19:09.299"/>
+<status status="PASS" starttime="20230216 16:14:22.778" endtime="20230216 16:14:22.906"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>Laptops</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:09.300" level="INFO">Clicking link 'Laptops'.</msg>
-<status status="PASS" starttime="20230215 21:19:09.299" endtime="20230215 21:19:09.530"/>
+<msg timestamp="20230216 16:14:22.907" level="INFO">Clicking link 'Laptops'.</msg>
+<status status="PASS" starttime="20230216 16:14:22.906" endtime="20230216 16:14:23.010"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>link=MacBook Pro</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230215 21:19:09.531" endtime="20230215 21:19:10.225"/>
+<status status="PASS" starttime="20230216 16:14:23.011" endtime="20230216 16:14:24.024"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>MacBook Pro</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:10.231" level="INFO">Clicking link 'MacBook Pro'.</msg>
-<status status="PASS" starttime="20230215 21:19:10.227" endtime="20230215 21:19:11.181"/>
+<msg timestamp="20230216 16:14:24.026" level="INFO">Clicking link 'MacBook Pro'.</msg>
+<status status="PASS" starttime="20230216 16:14:24.026" endtime="20230216 16:14:24.506"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//div[2]//a</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230215 21:19:11.181" endtime="20230215 21:19:11.671"/>
+<status status="PASS" starttime="20230216 16:14:24.507" endtime="20230216 16:14:24.970"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@onclick="addToCart(15)"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:11.672" level="INFO">Clicking element 'xpath=//a[@onclick="addToCart(15)"]'.</msg>
-<status status="PASS" starttime="20230215 21:19:11.671" endtime="20230215 21:19:11.757"/>
+<msg timestamp="20230216 16:14:24.971" level="INFO">Clicking element 'xpath=//a[@onclick="addToCart(15)"]'.</msg>
+<status status="PASS" starttime="20230216 16:14:24.971" endtime="20230216 16:14:25.028"/>
 </kw>
 <kw name="Alert Should Be Present" library="SeleniumLibrary">
 <doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20230215 21:19:11.759" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20230215 21:19:11.759" endtime="20230215 21:19:12.296"/>
+<msg timestamp="20230216 16:14:25.028" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20230216 16:14:25.028" endtime="20230216 16:14:26.043"/>
 </kw>
-<status status="PASS" starttime="20230215 21:19:04.885" endtime="20230215 21:19:12.298"/>
+<status status="PASS" starttime="20230216 16:14:19.646" endtime="20230216 16:14:26.043"/>
 </kw>
-<kw name="finalizarCompra">
+<kw name="limparCarrinho">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>Cart</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:12.304" level="INFO">Clicking link 'Cart'.</msg>
-<status status="PASS" starttime="20230215 21:19:12.303" endtime="20230215 21:19:13.204"/>
+<msg timestamp="20230216 16:14:26.047" level="INFO">Clicking link 'Cart'.</msg>
+<status status="PASS" starttime="20230216 16:14:26.045" endtime="20230216 16:14:26.562"/>
 </kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>css=.btn-success</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:13.206" level="INFO">Clicking button 'css=.btn-success'.</msg>
-<status status="PASS" starttime="20230215 21:19:13.204" endtime="20230215 21:19:13.371"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//a[text()='Delete']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230216 16:14:26.562" endtime="20230216 16:14:27.489"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>id=name</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230215 21:19:13.373" endtime="20230215 21:19:13.704"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[text()='Delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230216 16:14:27.490" level="INFO">Clicking element 'xpath=//a[text()='Delete']'.</msg>
+<status status="PASS" starttime="20230216 16:14:27.489" endtime="20230216 16:14:27.534"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=name</arg>
-<arg>Felipe Daniel</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:13.706" level="INFO">Typing text 'Felipe Daniel' into text field 'id=name'.</msg>
-<status status="PASS" starttime="20230215 21:19:13.705" endtime="20230215 21:19:13.911"/>
+<status status="PASS" starttime="20230216 16:14:26.044" endtime="20230216 16:14:27.534"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=country</arg>
-<arg>Brasil</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:13.912" level="INFO">Typing text 'Brasil' into text field 'id=country'.</msg>
-<status status="PASS" starttime="20230215 21:19:13.912" endtime="20230215 21:19:14.046"/>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//a[text()='Delete']</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230216 16:14:27.535" endtime="20230216 16:14:27.565"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=city</arg>
-<arg>Fortaleza</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.048" level="INFO">Typing text 'Fortaleza' into text field 'id=city'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.046" endtime="20230215 21:19:14.274"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=card</arg>
-<arg>12345678</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.276" level="INFO">Typing text '12345678' into text field 'id=card'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.275" endtime="20230215 21:19:14.369"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=month</arg>
-<arg>07</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.370" level="INFO">Typing text '07' into text field 'id=month'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.369" endtime="20230215 21:19:14.544"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=year</arg>
-<arg>2031</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.546" level="INFO">Typing text '2031' into text field 'id=year'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.545" endtime="20230215 21:19:14.810"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[text()='Purchase']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.811" level="INFO">Clicking button 'xpath=//button[text()='Purchase']'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.810" endtime="20230215 21:19:14.892"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>css=.sweet-alert &gt; h2</arg>
-<arg>Thank you for your purchase!</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20230215 21:19:14.892" level="INFO">Verifying element 'css=.sweet-alert &gt; h2' contains exact text 'Thank you for your purchase!'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.892" endtime="20230215 21:19:14.922"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>css=.confirm</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230215 21:19:14.922" level="INFO">Clicking button 'css=.confirm'.</msg>
-<status status="PASS" starttime="20230215 21:19:14.922" endtime="20230215 21:19:15.064"/>
-</kw>
-<status status="PASS" starttime="20230215 21:19:12.300" endtime="20230215 21:19:15.067"/>
-</kw>
-<status status="PASS" starttime="20230215 21:19:04.885" endtime="20230215 21:19:15.068"/>
+<status status="PASS" starttime="20230216 16:14:19.645" endtime="20230216 16:14:27.566"/>
 </test>
 <doc>Robot Framework Sem Complicação</doc>
-<status status="PASS" starttime="20230215 21:19:04.604" endtime="20230215 21:19:15.071"/>
+<status status="PASS" starttime="20230216 16:14:19.418" endtime="20230216 16:14:27.568"/>
 </suite>
 <statistics>
 <total>

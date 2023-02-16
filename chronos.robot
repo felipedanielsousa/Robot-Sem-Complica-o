@@ -29,10 +29,22 @@ finalizarCompra
     Click Button                     xpath=//button[text()='Purchase']
     Element Text Should Be           css=.sweet-alert > h2    Thank you for your purchase!
     Click Button                     css=.confirm
+
+limparCarrinho
+    Click Link                       Cart
+    Wait Until Element Is Enabled    xpath=//a[text()='Delete']
+    Click Element                    xpath=//a[text()='Delete']
 *** Test Cases ***
-ChronosTest 
+Finalizar uma compra 
     addToCart
     finalizarCompra
+
+Limpar Carrinho
+    addToCart
+    limparCarrinho
+    Wait Until Element Is Enabled    xpath=//a[text()='Delete']
+   
+
    
 
 
