@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230215 21:18:40.489" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\felipe.barbosa\.vscode\extensions\robocorp.robotframework-lsp-1.9.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="addToCart">
+<msg timestamp="20230215 21:18:41.658" level="FAIL">No keyword with name 'addToCart' found.</msg>
+<status status="FAIL" starttime="20230215 21:18:41.658" endtime="20230215 21:18:41.658"/>
+</kw>
+<kw name="finalizarCompra">
+<status status="NOT RUN" starttime="20230215 21:18:41.659" endtime="20230215 21:18:41.659"/>
+</kw>
+<kw name="addToCart">
+<msg timestamp="20230215 21:18:59.713" level="FAIL">No keyword with name 'addToCart' found.</msg>
+<status status="FAIL" starttime="20230215 21:18:59.712" endtime="20230215 21:18:59.713"/>
+</kw>
+<kw name="finalizarCompra">
+<status status="NOT RUN" starttime="20230215 21:18:59.715" endtime="20230215 21:18:59.715"/>
+</kw>
+<status status="PASS" starttime="20230215 21:18:40.517" endtime="20230215 21:19:07.374"/>
+</kw>
+<status status="PASS" starttime="20230215 21:18:40.517" endtime="20230215 21:19:07.375"/>
+</test>
+<status status="PASS" starttime="20230215 21:18:40.493" endtime="20230215 21:19:07.376"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
